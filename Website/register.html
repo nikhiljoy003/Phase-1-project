@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login_style2.css">
+    <title>Register</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="title">Register</div>
+        <form id="frm">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full name</span>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Enter name" id="name" name="name">
+                </div>
+                
+
+                <div class="input-box">
+                    <span class="details">Username</span>
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" placeholder="Enter username" id="username" name="username" >
+
+                </div>
+                
+
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter email" id="email" name="email">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Phone number</span>
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" placeholder="Enter Phone Number" id="phone" name="phone">
+                </div>
+                
+
+                <div class="input-box">
+                    <span class="details">Date Of birth</span>
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="date" placeholder="Enter Date of Birth" id="dob">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Age</span>
+                    <input type="number" placeholder="Enter Age" id="age" name="age">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Address</span>
+                    <textarea placeholder="Enter address" id="address" name="address" required style="width: 298px; height: 45px;"></textarea>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">State</span>
+                    <select id="state" name="state" onchange="populateCities()">
+                        <option value="">Select State</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">City</span>
+                    <select id="city" name="city">
+                        <option value="">Select City</option>
+                    </select>
+                </div>
+                
+
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Enter Password" id="password" name="password">
+                </div>
+            </div>
+
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="male">Male</span>
+                    </label>
+
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="male">Female</span>
+                    </label>
+
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="male">Prefer not to say</span>
+                    </label>
+                </div>
+                <button class="button">
+                    <span>Register</span>
+                </button><br>
+                <a href="login.html">have an Account? Login</a><br>
+                <a href="index.html">Home</a>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"></script> 
+    <script src="val.js"></script>
+</body>
+</html>
